@@ -47,3 +47,4 @@ check_status <- function(response){
     stop(httr::message_for_status(response))
   }
 }
+

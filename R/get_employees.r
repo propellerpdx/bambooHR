@@ -13,6 +13,8 @@
 #' response <- get_employees(id = 0, fields = c("firstName","lastName"))
 #'
 #' @author Mark Druffel, \email{mdruffel@propellerpdx.com}
+#'
+#' @export
 
 get_employees <- function(id, fields, ...){
   dots <- rlang::list2(...)
