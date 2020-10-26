@@ -14,7 +14,6 @@
 #'
 #' @author Mark Druffel, \email{mdruffel@propellerpdx.com}
 
-
 get_report <- function(id, format, fd, ...){
   dots <- rlang::list2(...)
   #Default to csv format is not specified - csv seems most likely
