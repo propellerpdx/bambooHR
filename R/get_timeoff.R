@@ -22,7 +22,7 @@
 #' @export
 #'
 
-get_table <- function(table, id, since, ...){
+get_timeoff <- function(id, action, employee_id, start, end, type, status, ...){
   dots <- rlang::list2(...)
   query <- NULL
   if(rlang::is_missing(since)){
