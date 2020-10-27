@@ -1,8 +1,8 @@
 #' @title Coerce input date parameters to ISO 8601 format for Bamboo HR REST API
 #'
 #' @examples
-#' coerce_ISO8601("2020-09-01")
-#' coerce_ISO8601("2020-09-01 00:00:00.001")
+#' as_ISO8601_character("2020-09-01")
+#' as_ISO8601_character("2020-09-01 00:00:00.001")
 #'
 #' @author Mark Druffel, \email{mdruffel@propellerpdx.com}
 
@@ -22,6 +22,8 @@ as_ISO8601_character <- function(time){
     return(NULL)
   }
 }
+
+
 
 #is_ymd <- function(date = NULL) {
 #  check <- grepl("^[1-9]{1}[0-9]{3}-[0-1]{1}[0-9]{1}-[0-3]{1}[0-9]{1}$",
