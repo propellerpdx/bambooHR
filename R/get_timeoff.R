@@ -17,8 +17,6 @@
 #'
 #' @references \url{https://documentation.bamboohr.com/reference#get-employee-table-row-1}
 #'
-#' @importFrom magrittr %>%
-#'
 #' @export
 #'
 
@@ -34,7 +32,7 @@ get_timeoff <- function(id, action, employee_id, start, end, type, status, ...){
   url <- build_url(company_domain = dots$company_domain,
                    api_version = dots$api_version,
                    base_url = dots$base_url)
-  url <- glue::glue("{url}/employees/{id}/tables/{table}") %>%
+  url <- glue::glue("{url}/employees/{id}/tables/{table}") |>
     httr::modify_url(query = query)
   response <- get_request(url)
 }

@@ -1,3 +1,5 @@
+library(magrittr)
+
 fields <- get_meta(data = "fields") %>%
   httr::content(., as='text', type='json', encoding='UTF-8') %>%
   jsonlite::fromJSON(., simplifyDataFrame=FALSE) %>%

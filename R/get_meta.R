@@ -16,8 +16,6 @@
 #'
 #' @references \url{https://documentation.bamboohr.com/reference#get-employee-table-row-1}
 #'
-#' @importFrom magrittr %>%
-#'
 #' @export
 #'
 
