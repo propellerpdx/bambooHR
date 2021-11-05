@@ -4,6 +4,8 @@
 #' meta data API
 #'
 #' @param data fields, tables, lists, users, time_off/types, time_off/policies
+#' @param ... tbd
+#'
 #' @return tbl_df
 #'
 #' @examples
@@ -13,8 +15,6 @@
 #' job_info_changes <- get_table(table = "jobInfo", since = lubridate::today()-1)
 #'
 #' @references \url{https://documentation.bamboohr.com/reference#get-employee-table-row-1}
-#'
-#' @importFrom magrittr %>%
 #'
 #' @export
 #'
