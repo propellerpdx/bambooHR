@@ -1,10 +1,10 @@
-#' @title fill in
+#' @title Build URL Endpoints with Company Domain and API Version
 #'
 #' @description  fill in
 #'
-#' @param table_name tbd
 #' @param company_domain  tbd
-#' @param employee_id tbd
+#' @param api_version tbd
+#' @param base_url tbd
 #'
 #' @return text
 #'

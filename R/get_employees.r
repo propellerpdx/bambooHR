@@ -5,6 +5,7 @@
 #' @param id employee ID. The special employee ID of zero (0) means to use the employee ID associated with the API key (if any).
 #' @param fields  vector of values
 #' @param verbose Logical scalar. Should the function provide verbose messaging back on each step?
+#' @param ... tbd
 #'
 #' @return response object
 #'
@@ -16,7 +17,7 @@
 #'
 #' @export
 
-get_employees <- function(id, fields, ...){
+get_employees <- function(id, fields, verbose, ...){
   dots <- rlang::list2(...)
   api <- "employees"
   #Default to directory if an individual employee is not specified

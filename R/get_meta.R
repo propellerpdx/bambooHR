@@ -4,6 +4,8 @@
 #' meta data API
 #'
 #' @param data fields, tables, lists, users, time_off/types, time_off/policies
+#' @param ... tbd
+#'
 #' @return tbl_df
 #'
 #' @examples
