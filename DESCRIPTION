@@ -5,7 +5,7 @@ Version: 0.1.0
 Authors@R:c(
     person("Tom", "Bowling", "tom.bowling@ascent.io", role = c("aut", "cre")),
     person("Harry", "Alexander", "harry.alexander@ascent.io", role = "aut"),
-    person("Tim", "Fry", "tim.fry@ascent.io", role = c("aut")),
+    person("Tim", "Fry", "tim.fry@ascent.io", role = "aut"),
     person("Mango Solutions", role = "cph"))
 Maintainer: Tom Bowling <tom.bowling@ascent.io>
 Description: Enables a user to consume the BambooHR API endpoints using R.
