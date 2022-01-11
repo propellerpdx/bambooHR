@@ -45,6 +45,6 @@ get_api_version <- function(api_version){
   return(api_version)
 }
 get_company_domain <- function(company_domain){
-  company_domain <- rlang::maybe_missing(company_domain, default = "propellerpdx")
+  company_domain <- rlang::maybe_missing(company_domain, default = "ascent")
   return(company_domain)
 }

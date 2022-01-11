@@ -16,7 +16,7 @@
 #' \url{https://github.com/r-lib/httr}
 #' \url{https://curl.haxx.se/libcurl/c/CURLOPT_HTTP_VERSION.html}
 
-get_request <- function(url = "https://api.bamboohr.com/api/gateway.php/propellerpdx/v1/employees/all/tables/compensation",
+get_request <- function(url = "https://api.bamboohr.com/api/gateway.php/ascent/v1/employees/all/tables/compensation",
                         key = keys$BAMBOO_KEY,
                         verbose){
   verbose <- rlang::maybe_missing(verbose, FALSE)
