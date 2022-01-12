@@ -5,6 +5,8 @@
 #' as_ISO8601_character("2020-09-01 00:00:00.001")
 #'
 #' @author Mark Druffel, \email{mdruffel@propellerpdx.com}
+#'
+#' @export
 
 
 as_ISO8601_character <- function(time){

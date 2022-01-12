@@ -10,8 +10,10 @@
 #' @return response object
 #'
 #' @examples
+#' \dontrun{
 #' keys <- globalEntry::get_keys()
 #' response <- get_employees(id = 0, fields = c("firstName","lastName"))
+#' }
 #'
 #' @author Mark Druffel, \email{mdruffel@propellerpdx.com}
 
