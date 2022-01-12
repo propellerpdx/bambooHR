@@ -8,18 +8,9 @@
 #'
 #' @return tbl_df
 #'
-#' @examples
-#' \dontrun{
-#' keys <- globalEntry::get_keys()
-#' job_info <- get_table(table = "jobInfo")
-#' job_info_changes <- get_table(table = "jobInfo", since = lubridate::today()-1)
-#' }
-#'
 #' @references \url{https://documentation.bamboohr.com/reference#get-employee-table-row-1}
 #'
 #' @export
-#'
-
 get_meta <- function(data){
   url <- build_url()
   url <- glue::glue("{url}/meta/{data}")

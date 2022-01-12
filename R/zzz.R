@@ -46,10 +46,12 @@
 #' @param conffile A string giving the path where the configuration file will be written.
 #' This will automatically attempt to load from the default location \code{~/.bambooHR_user_config.json} (which can be changed via a \code{bambooHR.config_file}) entry in \code{options}).
 #'
-#' @return
 #' @export
 #'
 #' @examples
+#' \dontrun{
+#' config_setup("secret api key", "cool company")
+#' }
 #'
 config_setup <- function(apikey, companyname, conffile) {
 

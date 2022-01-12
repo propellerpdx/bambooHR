@@ -9,12 +9,9 @@
 #'
 #' @return response object
 #'
-#' @examples
-#'
 #' @author Mark Druffel, \email{mdruffel@propellerpdx.com}
 #'
 #' @export
-
 get_employees <- function(id, fields, verbose, ...) {
   dots <- rlang::list2(...)
   api <- "employees"

@@ -8,9 +8,6 @@
 #'
 #' @return response object
 #'
-#' @examples
-#'
-#'
 #' @author Mark Druffel, \email{mdruffel@propellerpdx.com}
 #' @references
 #' \url{https://github.com/r-lib/httr}
