@@ -9,21 +9,18 @@
 #'
 #' @return response object
 #'
-#' @examples
-#' keys <- globalEntry::get_keys()
-#' response <- get_employees(id = 0, fields = c("firstName","lastName"))
-#'
 #' @author Mark Druffel, \email{mdruffel@propellerpdx.com}
-
-get_report <- function(id, format, fields, ...){
+get_report <- function(id, format, fields, ...) {
   dots <- rlang::list2(...)
-  #Default to csv format is not specified - csv seems most likely
+  # Default to csv format is not specified - csv seems most likely
   format <- rlang::maybe_missing(format, default = "csv")
   fd <- rlang::maybe_missing(fields, default = "yes")
   query <- list(format = format, fd = fd)
-  url <- build_url(company_domain = dots$company_domain,
-                   api_version = dots$api_version,
-                   base_url = dots$base_url)
+  url <- build_url(
+    company_domain = dots$company_domain,
+    api_version = dots$api_version,
+    base_url = dots$base_url
+  )
   url <- glue::glue("{url}/reports/{id}")
   url <- httr::modify_url(url = url, query = query)
   response <- get_request(url)

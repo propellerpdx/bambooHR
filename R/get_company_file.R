@@ -6,9 +6,6 @@
 #' @param ... tbd
 #'
 #' @return text
-#'
-#' @examples
-#'
 get_company_file <- function(file_id, ...){
   dots <- rlang::list2(...)
   #Default to directory if an individual employee is not specified
