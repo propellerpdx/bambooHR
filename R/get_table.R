@@ -9,29 +9,25 @@
 #' @param table_alias the a alis of the table name requested, must be valid from the meta data API
 #' @return tbl_df
 #'
-#' @examples
-#'
-#' keys <- globalEntry::get_keys()
-#' job_info <- get_table(table = "jobInfo")
-#' job_info_changes <- get_table(table = "jobInfo", since = lubridate::today()-1)
-#'
 #' @references \url{https://documentation.bamboohr.com/reference#get-employee-table-row-1}
 #'
 #' @export
 #'
 
-get_table <- function(table, id, since, ...){
+get_table <- function(table, id, since, ...) {
   dots <- rlang::list2(...)
   query <- NULL
-  if(rlang::is_missing(since)){
+  if (rlang::is_missing(since)) {
     id <- rlang::maybe_missing(id, default = "all")
-  } else{
+  } else {
     id <- "changed"
     query$since <- as_ISO8601_character(since)
   }
-  url <- build_url(company_domain = dots$company_domain,
-                   api_version = dots$api_version,
-                   base_url = dots$base_url)
+  url <- build_url(
+    company_domain = dots$company_domain,
+    api_version = dots$api_version,
+    base_url = dots$base_url
+  )
   url <- glue::glue("{url}/employees/{id}/tables/{table}") |>
     httr::modify_url(query = query)
   response <- get_request(url)

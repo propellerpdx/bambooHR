@@ -7,6 +7,7 @@
 #' @param file_id The ID of the file to get from BambooHR.
 #' @param ... The company domain, API version, and base url.
 #'
+
 #' @return returns a response object.
 #'
 #' @examples
@@ -19,6 +20,8 @@
 #' )
 #'
 #'@author Mark Druffel, \email{mdruffel@propellerpdx.com}
+
+#' @return text
 
 get_company_file <- function(file_id, ...){
   dots <- rlang::list2(...)

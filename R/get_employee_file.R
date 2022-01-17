@@ -8,14 +8,7 @@
 #' @param ... tbd
 #'
 #' @return response object
-#'
-#' @examples
-#' keys <- globalEntry::get_keys()
-#' response <- get_employees(id = 0, fields = c("firstName","lastName"))
-#'
 #' @author Mark Druffel, \email{mdruffel@propellerpdx.com}
-
-
 get_employee_file <- function(id, file_id, verbose, ...){
   dots <- rlang::list2(...)
   #Default to view if a file_id is not specified, this provides all files the employee has
