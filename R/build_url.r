@@ -28,15 +28,3 @@ build_url <- function(company_domain = .get_company_name(),
   return(url)
 }
 
-get_base_url <- function(base_url){
-  base_url <- rlang::maybe_missing(base_url, default = "https://api.bamboohr.com/api/gateway.php")
-  return(base_url)
-}
-get_api_version <- function(api_version){
-  api_version <- rlang::maybe_missing(api_version, default = "v1")
-  return(api_version)
-}
-get_company_domain <- function(company_domain){
-  company_domain <- rlang::maybe_missing(company_domain, default = "ascent")
-  return(company_domain)
-}
