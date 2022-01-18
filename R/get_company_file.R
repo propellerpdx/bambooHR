@@ -21,16 +21,15 @@
 #'
 #'@author Mark Druffel, \email{mdruffel@propellerpdx.com}
 
-#' @return text
 
-get_company_file <- function(file_id, ...){
-  dots <- rlang::list2(...)
+get_company_file <- function(file_id, company_domain, api_version, base_url){
   #Default to directory if an individual employee is not specified
   file_id <- rlang::maybe_missing(file_id, default = "view")
   #Call the `build_url` function parsing in each element of the dots list
-  url <- build_url(company_domain = dots$company_domain,
-                   api_version = dots$api_version,
-                   base_url = dots$base_url)
+  url <- build_url(company_domain = company_domain,
+                   api_version = api_version,
+                   base_url = base_url)
+  #Glues "/files/file_id" to url returned from build_url call
   url <- glue::glue("{url}/files/{file_id}")
   response <- get_request(url)
   return(response)
