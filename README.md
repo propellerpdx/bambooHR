@@ -1,5 +1,5 @@
 
-# bambooHR <a href='https://dplyr.tidyverse.org'><img src='images/hex.png' align="right" height="139" /></a>
+# bambooHR <a href='https://dplyr.tidyverse.org'><img src='man/figures/hex.png' align="right" width="120" /></a>
 
 <!-- badges: start -->
 
@@ -8,7 +8,8 @@
 
 `{bambooHR}` is an R wrapper for the bambooHR API. By supplying a
 company domain and an API access token, users can seamlessly make API
-requests through built-in R functions.
+requests through built-in R functions. Get employees, employee files,
+reports and tables, all from within R.
 
 ## Installing and Loading {bambooHR}
 
