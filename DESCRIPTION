@@ -16,7 +16,8 @@ Imports:
     glue,
     httr,
     curl,
-    jsonlite
+    jsonlite,
+    testthat
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
