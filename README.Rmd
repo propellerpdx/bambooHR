@@ -2,7 +2,7 @@
 output: github_document
 ---
 
-# bambooHR  <a href='https://dplyr.tidyverse.org'><img src='man/figures/hex.png' align="right" width="120" /></a>
+# bambooHR  <img src='man/figures/hex.png' align="right" width="120" />
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/MangoTheCat/bambooHR/workflows/R-CMD-check/badge.svg)](https://github.com/MangoTheCat/bambooHR/actions)

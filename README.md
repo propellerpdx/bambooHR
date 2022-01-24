@@ -1,11 +1,11 @@
 
-# bambooHR <a href='https://dplyr.tidyverse.org'><img src='man/figures/hex.png' align="right" width="120" /></a>
+# bambooHR <img src='man/figures/hex.png' align="right" width="120" />
 
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/MangoTheCat/bambooHR/workflows/R-CMD-check/badge.svg)](https://github.com/MangoTheCat/bambooHR/actions)
 
-[![codecov](https://codecov.io/gh/MangoTheCat/bambooHR/branch/develop/graph/badge.svg?token=MO7E11509U)](https://codecov.io/gh/MangoTheCat/bambooHR)
+[![codecov](https://codecov.io/gh/MangoTheCat/bambooHR/branch/pkgdown/graph/badge.svg?token=MO7E11509U)](https://codecov.io/gh/MangoTheCat/bambooHR)
 <!-- badges: end -->
 
 `{bambooHR}` is an R wrapper for the bambooHR API. By supplying a
