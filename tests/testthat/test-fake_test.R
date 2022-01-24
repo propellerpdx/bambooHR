@@ -3,3 +3,10 @@ test_that("multiplication works", {
   fake <- config_setup("hi", "there")
   expect_null(fake)
 })
+
+test_that("fake 2", {
+
+  expect_equal(bambooHR::build_url(),
+               "https://api.bamboohr.com/api/gateway.php/there/v1")
+
+})
